@@ -11,8 +11,12 @@ class GetCitiesByCycle
   end
 
   def get_cities_by_cycle(lat,lon,cnt)
-    @single_city =JSON.parse(self.class.get
+    @single_city =JSON.parse(self.class.get("data/2.5/find?lat=#{lat}&lon=#{lon}&cnt=#{cnt}#{@apiKey}").body)
+
   end
 
 
 end
+
+x = GetCitiesByCycle.new
+puts x.get_cities_by_cycle(55.5,37.5,10)

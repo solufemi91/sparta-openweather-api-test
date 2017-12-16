@@ -17,6 +17,5 @@ class GetWeatherByCityName
 end
 
 
-test = GetWeatherByCityName.new
-puts test.get_weather_by_city_name("London")
-puts test.get_weather_by_city_name("Madrid")
+test2 = GetWeatherByCityName.new
+puts test2.get_weather_by_city_name("London")
