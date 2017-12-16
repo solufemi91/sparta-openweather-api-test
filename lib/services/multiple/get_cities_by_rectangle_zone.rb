@@ -18,4 +18,4 @@ class GetCitiesByRectangleZone
 end
 
 x = GetCitiesByRectangleZone.new
-puts x.get_cities_by_rectangle_zone(12,32,15,37,10)
+puts x.get_cities_by_rectangle_zone('12','32','15','37','10')

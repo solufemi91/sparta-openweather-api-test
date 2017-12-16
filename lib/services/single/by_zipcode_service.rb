@@ -14,6 +14,3 @@ class GetWeatherByZipCode
     @single_city = JSON.parse(self.class.get("/data/2.5/weather?zip=#{zip_code},#{country_code}#{@apiKey}").body)
   end
 end
-
-x = GetWeatherByZipCode.new
-puts x.get_weather_zip_coordinates('94040','us')

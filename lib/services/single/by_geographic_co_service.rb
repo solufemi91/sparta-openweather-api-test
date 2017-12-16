@@ -16,6 +16,3 @@ class GetWeatherByGeoCo
 
 
 end
-
-x = GetWeatherByGeoCo.new
-puts x.get_weather_geo_coordinates(35,139)

@@ -19,4 +19,4 @@ class GetCitiesByCycle
 end
 
 x = GetCitiesByCycle.new
-puts x.get_cities_by_cycle(55.5,37.5,10)
+puts x.get_cities_by_cycle('55.5','37.5','10')

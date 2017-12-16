@@ -14,6 +14,3 @@ class GetWeatherByCityId
     @single_city = JSON.parse(self.class.get("/data/2.5/weather?id=#{id}#{@apiKey}").body)
   end
 end
-
-test2 = GetWeatherByCityId.new
-puts test2.get_weather_by_city_id("2172797")
