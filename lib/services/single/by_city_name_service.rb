@@ -18,8 +18,7 @@ class GetWeatherByCityName
   def get_random_city
     @json = File.read('iso_country_data.json')
     @json_parse = JSON.parse(@json)
-    @numberofCities = @json_parse.length
-    @json_parse[rand(@numberofCities)]['CapitalName']
+    @json_parse[rand(@json_parse.length)]['CapitalName']
   end
 
 
@@ -162,8 +161,8 @@ class GetWeatherByCityName
 
 end
 
-# 
-# x = GetWeatherByCityName.new
 #
-#
-# puts x.get_random_city
+x = GetWeatherByCityName.new
+
+
+puts x.get_random_city
