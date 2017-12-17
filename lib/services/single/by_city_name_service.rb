@@ -159,5 +159,6 @@ end
 
 
 x = GetWeatherByCityName.new
- puts x.get_weather_by_city_name("Abuja")
-puts x.get_sys_sunset
+ # puts x.get_weather_by_city_name("Abuja")
+ # puts x.get_weather_by_city_name("London")
+# puts x.get_cod
