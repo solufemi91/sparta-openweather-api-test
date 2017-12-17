@@ -1,10 +1,13 @@
 require 'spec_helper'
 
+
 describe Weatherio do
   context 'For the city_name service' do
 
     before(:all) do
       @weatherio = Weatherio.new.single_name
+      # when i run the code below, my program fails
+      # @randomcity = @weatherio.get_random_city
       @weatherresults = @weatherio.get_weather_by_city_name("madrid")
     end
 
