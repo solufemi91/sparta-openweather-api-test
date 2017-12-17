@@ -154,7 +154,7 @@ class GetWeatherByCityId
 
 end
 
-# x = GetWeatherByCityId.new
-#  x.get_weather_by_city_id("2352778")
+x = GetWeatherByCityId.new
+puts  x.get_weather_by_city_id("2352778")
 #
 # puts x.get_name

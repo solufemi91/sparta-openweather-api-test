@@ -1,11 +1,11 @@
 require 'spec_helper'
 
 describe Weatherio do
-  context 'For the city_id service' do
+  context 'For the city_geographic_co-ordinates service' do
 
     before(:all) do
-      @weatherio = Weatherio.new.single_id
-      @weatherresults = @weatherio.get_weather_by_city_id("2352778")
+      @weatherio = Weatherio.new.single_geographic
+      @weatherresults = @weatherio.get_weather_geo_coordinates('9.06','7.49')
     end
 
     it "I expect it to be a hash" do

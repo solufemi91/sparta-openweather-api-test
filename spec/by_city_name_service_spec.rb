@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Weatherio do
-  context 'text' do
+  context 'For the city_name service' do
 
     before(:all) do
       @weatherio = Weatherio.new.single_name
