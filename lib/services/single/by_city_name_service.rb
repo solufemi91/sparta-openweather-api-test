@@ -15,6 +15,14 @@ class GetWeatherByCityName
 
   end
 
+  def get_random_city
+    @json = File.read('iso_country_data.json')
+    @json_parse = JSON.parse(@json)
+    @numberofCities = @json_parse.length
+    @json_parse[rand(@numberofCities)]['CapitalName']
+  end
+
+
   def get_coord
     @single_city['coord']
   end
@@ -152,13 +160,10 @@ class GetWeatherByCityName
   end
 
 
-
-
-
 end
 
-
-x = GetWeatherByCityName.new
- puts x.get_weather_by_city_name("Abuja")
- # puts x.get_weather_by_city_name("London")
-# puts x.get_cod
+# 
+# x = GetWeatherByCityName.new
+#
+#
+# puts x.get_random_city
