@@ -5,7 +5,8 @@ describe Weatherio do
 
     before(:all) do
       @weatherio = Weatherio.new.single_id
-      @weatherresults = @weatherio.get_weather_by_city_id("2352778")
+      @random_city_id = Weatherio.new.random_city_id.get_random_city_by_id
+      @weatherresults = @weatherio.get_weather_by_city_id(@random_city_id)
     end
 
     it "I expect it to be a hash" do

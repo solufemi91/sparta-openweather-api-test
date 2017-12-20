@@ -6,9 +6,8 @@ describe Weatherio do
 
     before(:all) do
       @weatherio = Weatherio.new.single_name
-      # when i run the code below, my program fails
-      # @randomcity = @weatherio.get_random_city
-      @weatherresults = @weatherio.get_weather_by_city_name("madrid")
+      @randomcity = Weatherio.new.random_city_name.get_random_city_by_name
+      @weatherresults = @weatherio.get_weather_by_city_name(@randomcity)
     end
 
     it "I expect it to be a hash" do

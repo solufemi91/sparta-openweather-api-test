@@ -12,6 +12,7 @@ class GetWeatherBySeveral_IDs
 
   def get_weather_by_several_ids(id)
     @single_city =JSON.parse(self.class.get("data/2.5/group?id=#{id}&units=metric#{@apiKey}").body)
+    
   end
 end
 
